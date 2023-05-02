@@ -48,7 +48,7 @@ def place_create(city_id):
     response = jsonify(new_place.to_json())
     response.status_code = 201
 
-    return resp
+    return response
 
 
 @app_views.route("/places/<place_id>",  methods=["GET"],

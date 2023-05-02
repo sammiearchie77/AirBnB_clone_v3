@@ -99,7 +99,7 @@ def link_amenity_to_place(place_id, amenity_id):
 
     fetched_obj.save()
 
-    resp = jsonify(amenity_obj.to_json())
-    resp.status_code = 201
+    respsonse = jsonify(amenity_obj.to_json())
+    respsonse.status_code = 201
 
-    return resp
+    return respsonse

@@ -37,10 +37,10 @@ def user_create():
 
     new_user = User(**user_json)
     new_user.save()
-    resp = jsonify(new_user.to_json())
-    resp.status_code = 201
+    response = jsonify(new_user.to_json())
+    response.status_code = 201
 
-    return resp
+    return response
 
 
 @app_views.route("/users/<user_id>",  methods=["GET"], strict_slashes=False)

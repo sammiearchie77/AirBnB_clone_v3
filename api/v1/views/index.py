@@ -22,7 +22,7 @@ def status():
     response = jsonify(data)
     response.status_code = 200
 
-    return resp
+    return response
 
 
 @app_views.route("/stats", methods=['GET'], strict_slashes=False)
